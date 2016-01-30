@@ -6,7 +6,6 @@
   "problems": [
     "leap",
     "rna-transcription",
-    "accumulate",
     "bob",
     "sum-of-multiples",
     "strain",
@@ -37,11 +36,13 @@
     "parallel-letter-frequency"
   ],
   "deprecated": [
-
+    "accumulate"
   ],
   "ignored": [
     "bin",
+    "deps",
     "docs",
+    "_build",
     "_test"
   ],
   "foregone": [
