@@ -9,7 +9,7 @@
     "bob",
     "sum-of-multiples",
     "strain",
-    "point-mutations",
+    "hamming",
     "space-age",
     "grains",
     "anagram",
@@ -39,11 +39,11 @@
     "accumulate"
   ],
   "ignored": [
+    "_build",
+    "_test",
     "bin",
     "deps",
-    "docs",
-    "_build",
-    "_test"
+    "docs"
   ],
   "foregone": [
 

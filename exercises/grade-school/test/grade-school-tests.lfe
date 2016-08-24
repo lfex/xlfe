@@ -2,7 +2,6 @@
   (behaviour ltest-unit)
   (export all))
 
-(include-lib "eunit/include/eunit.hrl")
 (include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest add-student
@@ -30,8 +29,8 @@
          (students (grade-school:get 5 school)))
     (is-equal '("Bradley" "Franklin") (lists:sort students))))
 
-(deftest get-students-in-a-non-existant-grade
-  (is-equal (grade-school:new) (grade-school:get 1 '())))
+(deftest get-students-in-a-non-existent-grade
+  (is-equal '() (grade-school:get 1 (grade-school:new))))
 
 (deftest sort-school
   (let* ((school (grade-school:add "Jennifer"    4 (grade-school:new)))
